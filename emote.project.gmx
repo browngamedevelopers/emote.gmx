@@ -114,11 +114,11 @@
       <object>objects\objMonsterAll</object>
       <object>objects\objHeart</object>
       <object>objects\objRing</object>
+      <object>objects\objHole</object>
       <object>objects\objMonsterPath</object>
     </objects>
     <object>objects\objBomb</object>
     <object>objects\objExplosion</object>
-    <object>objects\objHole</object>
     <object>objects\objSlideUp</object>
     <object>objects\objSlideDown</object>
     <object>objects\objSlideLeft</object>
