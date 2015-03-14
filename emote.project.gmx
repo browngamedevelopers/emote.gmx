@@ -35,6 +35,8 @@
     <sound>sound\sndMonster</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\sprExcitePickup</sprite>
+    <sprite>sprites\sprAngerPickup</sprite>
     <sprite>sprites\sprGoal</sprite>
     <sprite>sprites\sprPerson</sprite>
     <sprite>sprites\sprLives</sprite>
@@ -76,6 +78,7 @@
     <script>scripts\doorDestroy.gml</script>
     <script>scripts\showDialog.gml</script>
     <script>scripts\performEmotion.gml</script>
+    <script>scripts\dropEmote.gml</script>
     <script>scripts\followPath.gml</script>
   </scripts>
   <fonts name="fonts">
@@ -94,6 +97,10 @@
     <object>objects\objDoorSwitch</object>
     <object>objects\objDiamondDoor</object>
     <objects name="Collidable">
+      <objects name="Pickup">
+        <object>objects\objAngerPickup</object>
+        <object>objects\objExcitePickup</object>
+      </objects>
       <object>objects\objGoal</object>
       <object>objects\objDiamond</object>
       <object>objects\objBonus</object>

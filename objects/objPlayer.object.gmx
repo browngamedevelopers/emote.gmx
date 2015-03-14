@@ -135,11 +135,26 @@ if (keyboard_check(ord("Z"))){
     performEmotion(ds_list_find_value(inventory,2));
 }
 if (keyboard_check(ord("A"))){
-  
+    var pickup = instance_place(x,y,objCollidable);
+    if(pickup.isEmotion) {
+        var drop = ds_list_find_value(inventory,0);
+        ds_list_replace(inventory,0,pickup.emote);
+        instance_create(x,y,dropEmote(drop));
+    }
 } else if (keyboard_check(ord("S"))){
-    
+    var pickup = instance_place(x,y,objCollidable);
+    if(pickup.isEmotion) {
+        var drop = ds_list_find_value(inventory,1);
+        ds_list_replace(inventory,1,pickup.emote);
+        instance_create(x,y,dropEmote(drop));
+    }
 } else if (keyboard_check(ord("D"))){
-    
+    var pickup = instance_place(x,y,objCollidable);
+    if(pickup.isEmotion) {
+        var drop = ds_list_find_value(inventory,2);
+        ds_list_replace(inventory,2,pickup.emote);
+        instance_create(x,y,dropEmote(drop));
+    }
 }
 
 
