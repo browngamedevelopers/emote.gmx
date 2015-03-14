@@ -35,7 +35,10 @@ pX = 0;
 pY = 0;
 image_speed = 0;
 
-
+stance = "idle";
+//idle,seeking
+idlePath = "";
+idlePathIndex = 0;
 
 </string>
           </argument>
@@ -138,30 +141,47 @@ else //if not moving, allow keyboard presses
 {
     path_clear_points(pathToPlayer);
     if(mp_grid_path(movementGrid, pathToPlayer, x, y, objPlayer.x, objPlayer.y, false)){
-
-    var travelDir = round(point_direction(x,y,path_get_point_x(pathToPlayer,nextPoint),path_get_point_y(pathToPlayer,nextPoint))/90)*90;
-    switch(travelDir mod 360){
-    case 0:
-    hspeed = 4;
-    image_index = 2;
-    break;
-    case 90:
-    vspeed = -4;
-    image_index = 1;
-    break;
-    case 180:
-    hspeed = -4;
-    image_index = 3;
-    break;
-    case 270:
-    vspeed = 4;
-    image_index = 0;
-    break;
     
-    }
+        var travelDir = round(point_direction(x,y,path_get_point_x(pathToPlayer,nextPoint),path_get_point_y(pathToPlayer,nextPoint))/90)*90;
+        switch(travelDir mod 360){
+        case 0:
+        hspeed = 4;
+        
+        break;
+        case 90:
+        vspeed = -4;
+        
+        break;
+        case 180:
+        hspeed = -4;
+        
+        break;
+        case 270:
+        vspeed = 4;
+        
+        break;
+        
+        }
+        stance = "seeking";
+    }else{
+        stance = "idle"
+        followPath(idlePath,idlePathIndex);
+        
+        idlePathIndex = (idlePathIndex+1) mod (string_count(",",idlePath)+1);
+
     }
 
     
+}
+
+if(hspeed&lt;0){
+image_index = 3;
+}else if(hspeed&gt;0){
+image_index = 2;
+}else if(vspeed&lt;0){
+image_index = 1;
+}else if(vspeed&gt;0){
+image_index = 0;
 }
 
 </string>
