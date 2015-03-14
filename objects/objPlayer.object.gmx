@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//sprite_index = sprPerson
+            <string>view_wview[0] = 32*global.viewableGrids;
+view_hview[0] = (view_wview[0]*10)/16;
+//sprite_index = sprPerson
 image_speed = 0;
 image_index = 0;
 inventory = ds_list_create();

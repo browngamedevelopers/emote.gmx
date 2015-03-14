@@ -33,7 +33,7 @@ global.lazyFactor = 4;
 global.exciteFactor = 4;
 global.exciteToggleCooldown = 150;
 global.exciteCooldown = 150;
-            
+global.viewableGrids = 30;
 global.gridSize = 32;
 global.playerSpeed = 4;
 score = 0;
@@ -56,10 +56,33 @@ while(!file_text_eof(file)){
     case "speed:":
     global.playerSpeed = real(string_extract(line,"=",1));
     break;
+    case "anger_cooldown":
+    global.angerCooldown = real(string_extract(line,"=",1));
+    break;
+    case "anger_toggle_cooldown":
+    global.angerToggleCooldown = real(string_extract(line,"=",1));
+    break;
+    case "lazy_cooldown":
+    global.lazyCooldown = real(string_extract(line,"=",1));
+    break;
+    case "lazy_toggle_cooldown":
+    global.lazyToggleCooldown = real(string_extract(line,"=",1));
+    break;
+    case "excitement_cooldown":
+    global.exciteCooldown = real(string_extract(line,"=",1));
+    break;
+    case "excitement_toggle_cooldown":
+    global.exciteToggleCooldown = real(string_extract(line,"=",1));
+    break;
+    case "viewable_grids":
+    global.viewableGrids = real(string_extract(line,"=",1));
+    break;
     }
+    
     ds_list_add(lines,line);
 }
-
+view_wview[0] = 32*global.viewableGrids;
+view_hview[0] = (view_wview[0]*10)/16;
 file_text_close(file);
 
 </string>
