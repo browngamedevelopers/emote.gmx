@@ -30,9 +30,7 @@ global.gridSize = 32;
 global.playerSpeed = 4;
 score = 0;
 lives = 3;
-
-global.gridSize = 32;
-global.playerSpeed = 4;
+global.enemySpeed = 4;
 
 file = file_text_open_read("parameters.ini");
 lines = ds_list_create();

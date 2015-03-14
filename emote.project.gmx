@@ -75,6 +75,7 @@
     <script>scripts\string_extract.gml</script>
     <script>scripts\doorDestroy.gml</script>
     <script>scripts\showDialog.gml</script>
+    <script>scripts\followPath.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntScoreFont</font>
