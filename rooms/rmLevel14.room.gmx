@@ -151,7 +151,7 @@
     <instance objName="objWallVertical" x="112" y="112" name="inst_8FB2BE84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertical" x="304" y="176" name="inst_0D527F20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertical" x="304" y="304" name="inst_9EDD7C8A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDoor" x="112" y="80" name="inst_68963B3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDiamondDoor" x="112" y="80" name="inst_68963B3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objHeart" x="304" y="240" name="inst_9D563187" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDiamond" x="48" y="176" name="inst_36CF9F14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDiamond" x="48" y="304" name="inst_FC8BDD02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

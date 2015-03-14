@@ -130,7 +130,7 @@
     <instance objName="objWall" x="336" y="16" name="inst_6C565326" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="336" y="80" name="inst_15CE6B96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="272" y="80" name="inst_7B3BC085" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDoor" x="304" y="80" name="inst_0C425D95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDiamondDoor" x="304" y="80" name="inst_0C425D95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="48" y="432" name="inst_F44BFF38" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMonsterAll" x="80" y="80" name="inst_6CF002B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMonsterAll" x="144" y="144" name="inst_525AFB92" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

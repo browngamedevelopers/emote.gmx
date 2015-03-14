@@ -178,7 +178,7 @@
     <instance objName="objWallVertical" x="80" y="336" name="inst_ED7E176F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertical" x="400" y="208" name="inst_A2A9D476" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertical" x="400" y="272" name="inst_14AD8BD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDoor" x="400" y="240" name="inst_36922997" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDiamondDoor" x="400" y="240" name="inst_36922997" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGoal" x="560" y="240" name="inst_4108186B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDiamond" x="112" y="112" name="inst_82FA6A13" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDiamond" x="112" y="144" name="inst_3C94E281" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -87,6 +87,8 @@
     <object>objects\objCollidable</object>
     <object>objects\objPlayer</object>
     <object>objects\objDoor</object>
+    <object>objects\objDoorSwitch</object>
+    <object>objects\objDiamondDoor</object>
     <objects name="Collidable">
       <object>objects\objGoal</object>
       <object>objects\objDiamond</object>

@@ -203,7 +203,7 @@
     <instance objName="objRing" x="560" y="112" name="inst_DFE4A955" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRing" x="560" y="368" name="inst_25B21768" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objGoal" x="304" y="48" name="inst_39810989" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDoor" x="304" y="80" name="inst_377278E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDiamondDoor" x="304" y="80" name="inst_377278E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDiamond" x="48" y="48" name="inst_5C6FABD3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDiamond" x="48" y="176" name="inst_3A755D41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDiamond" x="112" y="176" name="inst_DD65F050" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
