@@ -46,6 +46,7 @@
     <sprite>sprites\sprTrigger</sprite>
     <sprite>sprites\sprExplosion</sprite>
     <sprite>sprites\sprBlock</sprite>
+    <sprite>sprites\sprHeavyBlock</sprite>
     <sprite>sprites\sprHole</sprite>
     <sprite>sprites\sprBonus</sprite>
     <sprite>sprites\sprHeart</sprite>
@@ -122,6 +123,7 @@
     <object>objects\objSlideDown</object>
     <object>objects\objSlideLeft</object>
     <object>objects\objSlideRight</object>
+    <object>objects\objHeavyBlock</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmStart</room>
