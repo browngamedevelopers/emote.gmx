@@ -73,6 +73,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\string_extract.gml</script>
+    <script>scripts\doorDestroy.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntScoreFont</font>

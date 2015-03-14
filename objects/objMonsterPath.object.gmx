@@ -29,19 +29,14 @@
 isHazard = true;
 movementGrid = mp_grid_create(0,0,room_width/global.gridSize,room_height/global.gridSize,global.gridSize,global.gridSize);
 pathToPlayer = path_add();
-with(objWall){
-    mp_grid_add_instances(other.movementGrid, id, false);
-    
-}
-with(objCollidable){
-    if(isHazard){
-        mp_grid_add_instances(other.movementGrid, id, false);
-    }
-}
+
 nextPoint =1;
 pX = 0;
 pY = 0;
 image_speed = 0;
+
+
+
 </string>
           </argument>
         </arguments>
@@ -71,7 +66,7 @@ path_delete(pathToPlayer);
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -89,6 +84,47 @@ path_delete(pathToPlayer);
           <argument>
             <kind>1</kind>
             <string>
+
+alarm[0] = 15;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>mp_grid_clear_all(movementGrid);
+with(objWall){
+    mp_grid_add_instances(other.movementGrid, id, false);
+    
+}
+with(objCollidable){
+    if(isHazard){
+        if(id != other.id){
+            mp_grid_add_instances(other.movementGrid, id, false);
+        }
+    }
+}
+
+
+
+
 if speed &gt; 0 //if moving
 {
 
@@ -100,7 +136,9 @@ if speed &gt; 0 //if moving
 }
 else //if not moving, allow keyboard presses
 {
-    mp_grid_path(movementGrid, pathToPlayer, x, y, objPlayer.x, objPlayer.y, false);
+    path_clear_points(pathToPlayer);
+    if(mp_grid_path(movementGrid, pathToPlayer, x, y, objPlayer.x, objPlayer.y, false)){
+
     var travelDir = round(point_direction(x,y,path_get_point_x(pathToPlayer,nextPoint),path_get_point_y(pathToPlayer,nextPoint))/90)*90;
     switch(travelDir mod 360){
     case 0:
@@ -119,6 +157,8 @@ else //if not moving, allow keyboard presses
     vspeed = 4;
     image_index = 0;
     break;
+    
+    }
     }
 
     

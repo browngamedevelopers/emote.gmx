@@ -212,7 +212,9 @@
     <instance objName="objWallVertical" x="528" y="208" name="inst_8E87F50B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertical" x="528" y="176" name="inst_BE69074F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="48" y="432" name="inst_B7993DB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDoorSwitch" x="304" y="304" name="inst_7CCE2486" locked="0" code="event_inherited();&#xA;myDoor = &quot;door1&quot;;&#xA;triggerScript = doorDestroy;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMonsterPath" x="560" y="48" name="inst_3337BDE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDoor" x="432" y="272" name="inst_7DC84A2A" locked="0" code="doorName = &quot;door1&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

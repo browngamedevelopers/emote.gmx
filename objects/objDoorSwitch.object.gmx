@@ -29,8 +29,8 @@
 event_inherited();
 isTrigger = true;
 //Set these in the creation code of the Level Editor
-myDoor = noone; //what door to check
-triggerScript = noone; //what script to trigger
+myDoor = ""; //what door to check
+triggerScript = doorDestroy; //what script to trigger
 
 </string>
           </argument>
@@ -56,11 +56,11 @@ triggerScript = noone; //what script to trigger
             <kind>1</kind>
             <string>///Execute unique scripts
 event_inherited();
-if(myDoor != noone){
+if(myDoor != ""){
     with(objDoor){
         if(doorName == other.myDoor){
-            if(triggerScript != noone){
-                script_execute(triggerScript);
+            if(script_exists(other.triggerScript)){
+                script_execute(other.triggerScript);
             }
         }
     }
