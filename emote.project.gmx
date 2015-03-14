@@ -35,6 +35,7 @@
     <sound>sound\sndMonster</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\sprSlow</sprite>
     <sprite>sprites\sprExcitePickup</sprite>
     <sprite>sprites\sprLazyPickup</sprite>
     <sprite>sprites\sprAngerPickup</sprite>
@@ -87,6 +88,7 @@
     <font>fonts\fntScoreFont</font>
   </fonts>
   <objects name="objects">
+    <object>objects\objSlow</object>
     <object>objects\objController</object>
     <object>objects\objGlobal</object>
     <object>objects\objWall</object>
