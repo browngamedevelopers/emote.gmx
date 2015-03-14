@@ -203,8 +203,8 @@ draw_self();
 //draws a much more accurate path...
 var p = 0;
 while(p&lt;path_get_number(pathToPlayer)){
-    draw_point(round(path_get_point_x(pathToPlayer,p)/16)*16,
-    round(path_get_point_y(pathToPlayer,p)/16)*16);
+    draw_circle(round(path_get_point_x(pathToPlayer,p)/16)*16,
+    round(path_get_point_y(pathToPlayer,p)/16)*16,3,true);
     p+=1;
 }
 </string>
