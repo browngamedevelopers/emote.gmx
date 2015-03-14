@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>global.angerCooldown = 150;
 global.gridSize = 32;
 global.playerSpeed = 4;
 score = 0;
