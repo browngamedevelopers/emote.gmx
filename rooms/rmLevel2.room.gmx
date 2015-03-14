@@ -3,8 +3,8 @@
   <caption>Collect all Diamonds</caption>
   <width>608</width>
   <height>512</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>16</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -188,7 +188,9 @@
     <instance objName="objDiamond" x="368" y="208" name="inst_5C54B0FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDiamond" x="368" y="240" name="inst_A98BC5FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDiamond" x="368" y="272" name="inst_0E81C212" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objPlayer" x="48" y="432" name="inst_C030C296" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objPlayer" x="80" y="400" name="inst_C030C296" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDoor" x="112" y="176" name="inst_7BC2012E" locked="0" code="doorName = &quot;someDoor&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDoorSwitch" x="368" y="400" name="inst_639EFEB2" locked="0" code="myDoor = &quot;someDoor&quot;;&#xA;triggerScript = showDialog;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

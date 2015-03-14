@@ -33,6 +33,7 @@ lives = 3;
 
 global.gridSize = 32;
 global.playerSpeed = 4;
+
 file = file_text_open_read("parameters.ini");
 lines = ds_list_create();
 while(!file_text_eof(file)){

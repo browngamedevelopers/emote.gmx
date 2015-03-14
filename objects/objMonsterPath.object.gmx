@@ -233,7 +233,7 @@ room_restart();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//draw_set_alpha(0.5);
+            <string>//draw_set_alpha(0.75);
 //mp_grid_draw(movementGrid);
 
 //draw_sprite(sprite_index,-1,round(x/16)*16,round(y/16)*16);
