@@ -118,7 +118,7 @@ with(objWall){
     
 }
 with(objCollidable){
-    if(isHazard){
+    if(isHazard || isMovable){
         if(id != other.id){
             mp_grid_add_instances(other.movementGrid, id, false);
         }

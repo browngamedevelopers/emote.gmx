@@ -31,9 +31,9 @@ view_hview[0] = (view_wview[0]*10)/16;
 image_speed = 0;
 image_index = 0;
 inventory = ds_list_create();
-ds_list_add(inventory,"anger");
-ds_list_add(inventory,"laziness");
-ds_list_add(inventory,"excitement");
+ds_list_add(inventory,"n");
+ds_list_add(inventory,"n");
+ds_list_add(inventory,"n");
 tmrAngerToggleCooldown = -1;
 tmrAngerCooldown = -1;
 
@@ -136,27 +136,36 @@ if (keyboard_check(ord("Z"))){
 } else if (keyboard_check(ord("C"))){
     performEmotion(ds_list_find_value(inventory,2));
 }
-if (keyboard_check(ord("A"))){
+if (keyboard_check_pressed(ord("A"))){
     var pickup = instance_place(x,y,objCollidable);
     if(pickup.isEmotion) {
         var drop = ds_list_find_value(inventory,0);
         ds_list_replace(inventory,0,pickup.emote);
-        instance_create(x,y,dropEmote(drop));
+        if(dropEmote(drop)!=noone){
+            instance_create(x,y,dropEmote(drop));
+        }
     }
-} else if (keyboard_check(ord("S"))){
+    with(pickup){instance_destroy();}
+} else if (keyboard_check_pressed(ord("S"))){
     var pickup = instance_place(x,y,objCollidable);
     if(pickup.isEmotion) {
         var drop = ds_list_find_value(inventory,1);
         ds_list_replace(inventory,1,pickup.emote);
-        instance_create(x,y,dropEmote(drop));
+        if(dropEmote(drop)!=noone){
+            instance_create(x,y,dropEmote(drop));
+        }
     }
-} else if (keyboard_check(ord("D"))){
+    with(pickup){instance_destroy();}
+} else if (keyboard_check_pressed(ord("D"))){
     var pickup = instance_place(x,y,objCollidable);
     if(pickup.isEmotion) {
         var drop = ds_list_find_value(inventory,2);
         ds_list_replace(inventory,2,pickup.emote);
-        instance_create(x,y,dropEmote(drop));
+        if(dropEmote(drop)!=noone){
+            instance_create(x,y,dropEmote(drop));
+        }
     }
+    with(pickup){instance_destroy();}
 }
 
 
