@@ -26,6 +26,14 @@
           <argument>
             <kind>1</kind>
             <string>global.angerCooldown = 150;
+global.angerToggleCooldown = 150;
+global.lazyToggleCooldown = 150;
+global.lazyCooldown = 150;
+global.lazyFactor = 4;
+global.exciteFactor = 4;
+global.exciteToggleCooldown = 150;
+global.exciteCooldown = 150;
+            
 global.gridSize = 32;
 global.playerSpeed = 4;
 score = 0;
