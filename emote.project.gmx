@@ -33,6 +33,12 @@
     <sound>sound\sndPush</sound>
     <sound>sound\sndLife</sound>
     <sound>sound\sndMonster</sound>
+    <sound>sound\sndDenial</sound>
+    <sound>sound\sndDepression</sound>
+    <sound>sound\sndAnger</sound>
+    <sound>sound\sndBargaining</sound>
+    <sound>sound\sndAcceptance</sound>
+    <sound>sound\sndMenu</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprSlow</sprite>
@@ -41,6 +47,10 @@
     <sprite>sprites\sprAngerPickup</sprite>
     <sprite>sprites\sprGoal</sprite>
     <sprite>sprites\sprPerson</sprite>
+    <sprite>sprites\sprPlayerLeft</sprite>
+    <sprite>sprites\sprPlayerRight</sprite>
+    <sprite>sprites\sprPlayerForward</sprite>
+    <sprite>sprites\sprPlayerIdle</sprite>
     <sprite>sprites\sprLives</sprite>
     <sprite>sprites\sprDiamond</sprite>
     <sprite>sprites\sprBomb</sprite>
@@ -70,6 +80,10 @@
       <sprite>sprites\sprRight</sprite>
     </sprites>
     <sprite>sprites\sprRing</sprite>
+    <sprite>sprites\sprGriefUp</sprite>
+    <sprite>sprites\sprGriefDown</sprite>
+    <sprite>sprites\sprGriefLeft</sprite>
+    <sprite>sprites\sprGriefRight</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bckStart</background>
