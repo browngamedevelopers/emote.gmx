@@ -35,6 +35,7 @@
     <sound>sound\sndMonster</sound>
   </sounds>
   <sprites name="sprites">
+    <sprite>sprites\sprDebris</sprite>
     <sprite>sprites\sprSlow</sprite>
     <sprite>sprites\sprExcitePickup</sprite>
     <sprite>sprites\sprLazyPickup</sprite>
@@ -88,6 +89,7 @@
     <font>fonts\fntScoreFont</font>
   </fonts>
   <objects name="objects">
+    <object>objects\objDebris</object>
     <object>objects\objSlow</object>
     <object>objects\objController</object>
     <object>objects\objGlobal</object>
@@ -129,6 +131,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rmStart</room>
+    <room>rooms\rmBargaining</room>
     <room>rooms\rmSandbox</room>
     <room>rooms\rmLevel1</room>
     <room>rooms\rmLevel2</room>

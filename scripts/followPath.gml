@@ -8,4 +8,3 @@ switch(dir){
         case("d"): vspeed = global.enemySpeed; break;
 }
 
-
