@@ -132,15 +132,16 @@ else //if not moving, allow keyboard presses
     } else if (keyboard_check(vk_right) &amp;&amp; !place_meeting(x+global.gridSize,y,objWall)){
         hspeed =  global.playerSpeed;
         image_index = 2;
-    }
-    if(place_meeting(x,y,objSlideUp)){
-        vspeed = -global.playerSpeed*2;
-    } else if(place_meeting(x,y,objSlideDown)){
-        vspeed = global.playerSpeed*2;
-    } else if(place_meeting(x,y,objSlideLeft)){
-        hspeed = -global.playerSpeed*2;
-    } else if(place_meeting(x,y,objSlideRight)){
-        hspeed = global.playerSpeed*2;
+    }else{
+        if(place_meeting(x,y,objSlideUp)){
+            vspeed = -global.playerSpeed*2;
+        } else if(place_meeting(x,y,objSlideDown)){
+            vspeed = global.playerSpeed*2;
+        } else if(place_meeting(x,y,objSlideLeft)){
+            hspeed = -global.playerSpeed*2;
+        } else if(place_meeting(x,y,objSlideRight)){
+            hspeed = global.playerSpeed*2;
+        }
     }
 
 }

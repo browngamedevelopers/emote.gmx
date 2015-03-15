@@ -83,6 +83,7 @@
     <script>scripts\performEmotion.gml</script>
     <script>scripts\dropEmote.gml</script>
     <script>scripts\followPath.gml</script>
+    <script>scripts\doorToggle.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntScoreFont</font>
@@ -98,6 +99,7 @@
     <object>objects\objCollidable</object>
     <object>objects\objPlayer</object>
     <object>objects\objDoor</object>
+    <object>objects\objDoorTrigger</object>
     <object>objects\objDoorSwitch</object>
     <object>objects\objDiamondDoor</object>
     <objects name="Collidable">

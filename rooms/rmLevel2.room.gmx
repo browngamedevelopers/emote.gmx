@@ -190,7 +190,7 @@
     <instance objName="objDiamond" x="368" y="272" name="inst_0E81C212" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objPlayer" x="80" y="400" name="inst_C030C296" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDoor" x="112" y="176" name="inst_7BC2012E" locked="0" code="doorName = &quot;someDoor&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDoorSwitch" x="368" y="400" name="inst_639EFEB2" locked="0" code="myDoor = &quot;someDoor&quot;;&#xA;triggerScript = showDialog;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDoorTrigger" x="368" y="400" name="inst_639EFEB2" locked="0" code="myDoor = &quot;someDoor&quot;;&#xA;triggerScript = showDialog;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
