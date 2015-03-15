@@ -29,6 +29,7 @@
 view_hview[0] = (view_wview[0]*10)/16;
 //sprite_index = sprPerson
 image_speed = 0.75;
+global.playerSpeed = global.origPlayerSpeed;
 
 
 isSlow = false;
