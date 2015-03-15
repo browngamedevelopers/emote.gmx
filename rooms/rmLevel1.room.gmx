@@ -141,7 +141,7 @@
     <instance objName="objWallVertical" x="144" y="176" name="inst_034DB304" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWallVertical" x="80" y="208" name="inst_B07D9CB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="464" y="336" name="inst_E12ED803" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objDoorSwitch" x="304" y="304" name="inst_7CCE2486" locked="0" code="event_inherited();&#xA;myDoor = &quot;door1&quot;;&#xA;triggerScript = doorDestroy;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDoorTrigger" x="304" y="304" name="inst_7CCE2486" locked="0" code="event_inherited();&#xA;myDoor = &quot;door1&quot;;&#xA;triggerScript = doorDestroy;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objMonsterPath" x="48" y="176" name="inst_3337BDE4" locked="0" code="idlePath = &quot;d,d,d,d,d,d,r,r,u,u,u,u,u,u,d,d,d,d,d,d,l,l,u,u,u,u,u,u&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="208" y="80" name="inst_C56C22FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWall" x="16" y="400" name="inst_034DF4D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

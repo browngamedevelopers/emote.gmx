@@ -36,6 +36,59 @@ isAffectable = false; //execute events in User Defined 5
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if speed &gt; 0 //if moving
+{
+
+    //if( (x-sprite_width/2) mod global.gridSize == 0 &amp;&amp; (y-sprite_height/2) mod global.gridSize == 0){
+    if( (x-global.gridSize/2) mod global.gridSize == 0 &amp;&amp; (y-global.gridSize/2) mod global.gridSize == 0){
+    
+        vspeed = 0;
+        hspeed = 0;
+    } 
+
+}
+else //if not moving, allow keyboard presses
+{
+    if(place_meeting(x,y,objSlideUp)){
+        if(!place_meeting (x,y-global.gridSize,objPlayer) &amp;&amp; !place_meeting (x,y-global.gridSize,objCollidable)){
+            vspeed = -global.playerSpeed*2;
+        }
+    } else if(place_meeting(x,y,objSlideDown)){
+        if(!place_meeting (x,y+global.gridSize,objPlayer) &amp;&amp; !place_meeting (x,y-global.gridSize,objCollidable)){
+            vspeed = global.playerSpeed*2;
+        }
+    } else if(place_meeting(x,y,objSlideLeft)){
+        if(!place_meeting (x-global.gridSize,y,objPlayer) &amp;&amp; !place_meeting (x,y-global.gridSize,objCollidable)){
+            hspeed = -global.playerSpeed*2;
+        }
+    } else if(place_meeting(x,y,objSlideRight)){
+        if(!place_meeting (x+global.gridSize,y,objPlayer) &amp;&amp; !place_meeting (x,y-global.gridSize,objCollidable)){
+            hspeed = global.playerSpeed*2;
+        }
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="objPlayer">
       <action>
         <libid>1</libid>
@@ -54,25 +107,25 @@ isAffectable = false; //execute events in User Defined 5
           <argument>
             <kind>1</kind>
             <string>
-if(isTrigger){
-    event_user(0);
-}
-if(isHazard){
-    event_user(1);   
-}
-if(isPickup){
-    event_user(2);
-}
-
-if(isMovable){
-    event_user(3);
-}
-if(isEmotion){
-    event_user(4);
-}
-if(isAffectable){
-    event_user(5);
-}
+    if(isTrigger){
+        event_user(0);
+    }
+    if(isHazard){
+        event_user(1);   
+    }
+    if(isPickup){
+        event_user(2);
+    }
+    
+    if(isMovable){
+        event_user(3);
+    }
+    if(isEmotion){
+        event_user(4);
+    }
+    if(isAffectable){
+        event_user(5);
+    }
 
 
 

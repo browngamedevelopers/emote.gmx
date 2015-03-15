@@ -28,10 +28,41 @@
             <string>///Execute unique scripts for a specific door in a level
 event_inherited();
 isTrigger = true;
+hasRan = false;
 //Set these in the creation code of the Level Editor
 myDoor = ""; //what door to check
-triggerScript = doorDestroy; //what script to trigger
+triggerScript = doorToggle;
 
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(place_meeting(x,y,objCollidable)){
+    event_user(0);
+}
+
+if(!place_meeting(x,y,objPlayer)){
+    hasRan = false;
+}
 </string>
           </argument>
         </arguments>
@@ -55,15 +86,18 @@ triggerScript = doorDestroy; //what script to trigger
           <argument>
             <kind>1</kind>
             <string>///Execute unique scripts
-event_inherited();
-if(myDoor != ""){
-    with(objDoor){
-        if(doorName == other.myDoor){
-            if(script_exists(other.triggerScript)){
-                script_execute(other.triggerScript);
+if(!hasRan){
+    event_inherited();
+    if(myDoor != ""){
+        with(objDoor){
+            if(doorName == other.myDoor){
+                if(script_exists(other.triggerScript)){
+                    script_execute(other.triggerScript);
+                }
             }
         }
     }
+    hasRan = true;
 }
 </string>
           </argument>
