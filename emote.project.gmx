@@ -85,10 +85,13 @@
     <sprite>sprites\sprGriefDown</sprite>
     <sprite>sprites\sprGriefLeft</sprite>
     <sprite>sprites\sprGriefRight</sprite>
+    <sprite>sprites\sprBox</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bckStart</background>
     <background>background\bckMain</background>
+    <background>background\bckDenial</background>
+    <background>background\bckDenialDrop</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
