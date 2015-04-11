@@ -29,6 +29,7 @@
 view_hview[0] = (view_wview[0]*10)/16;
 //sprite_index = sprPerson
 image_speed = 0.75;
+global.playerSpeed = global.origPlayerSpeed;
 
 
 isSlow = false;
@@ -338,7 +339,7 @@ if(tmrExciteCooldown&gt;0){
 for(i = 0; i&lt;ds_list_size(inventory); i+=1){
     draw_text(10,20+i*10,ds_list_find_value(inventory,i));
 }
-
+draw_set_color(c_red);
 if(isAngry){
     draw_text(10,80,"Anger; TimeLeft: " + string(tmrAngerCooldown) +" #Til Toggle: " + string(tmrAngerToggleCooldown));
 }

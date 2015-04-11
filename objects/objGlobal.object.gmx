@@ -40,6 +40,7 @@ score = 0;
 lives = 3;
 global.enemySpeed = 4;
 
+
 file = file_text_open_read("parameters.ini");
 lines = ds_list_create();
 while(!file_text_eof(file)){
@@ -83,6 +84,7 @@ while(!file_text_eof(file)){
 }
 view_wview[0] = 32*global.viewableGrids;
 view_hview[0] = (view_wview[0]*10)/16;
+global.origPlayerSpeed = global.playerSpeed;
 file_text_close(file);
 
 </string>
