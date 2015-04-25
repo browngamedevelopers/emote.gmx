@@ -28,6 +28,7 @@
             <string>///Execute unique scripts for a specific door in a level
 event_inherited();
 isTrigger = true;
+image_speed = 0;
 //Set these in the creation code of the Level Editor
 myDoor = ""; //what door to check
 triggerScript = doorDestroy; //what script to trigger
@@ -61,6 +62,7 @@ if(myDoor != ""){
     with(objDoor){
         if(doorName == other.myDoor){
             if(script_exists(other.triggerScript)){
+                other.image_index = 1;
                 script_execute(other.triggerScript);
             }
         }

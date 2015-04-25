@@ -3,7 +3,7 @@
   <spriteName>sprGriefDown</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>objCollidable</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -139,6 +139,7 @@ if speed &gt; 0 //if moving
 }
 else //if not moving, allow keyboard presses
 {
+    if(instance_exists(objPlayer)){
     path_clear_points(pathToPlayer);
     if(mp_grid_path(movementGrid, pathToPlayer, x, y, objPlayer.x, objPlayer.y, false)){
     
@@ -170,7 +171,7 @@ else //if not moving, allow keyboard presses
         idlePathIndex = (idlePathIndex+1) mod (string_count(",",idlePath)+1);
 
     }
-
+    }
     
 }
 
@@ -206,8 +207,7 @@ sprite_index = sprGriefDown;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>lives -= 1;
-room_restart();
+            <string>playerDeath();
 </string>
           </argument>
         </arguments>

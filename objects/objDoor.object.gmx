@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>doorName = "door";
+            <string>depth = 0;
+doorName = "door";
 </string>
           </argument>
         </arguments>

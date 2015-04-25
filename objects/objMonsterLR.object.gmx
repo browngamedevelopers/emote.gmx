@@ -125,8 +125,7 @@ if(irandom(1)){hspeed*=-1;}
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>lives -= 1;
-room_restart();
+            <string>playerDeath();
 </string>
           </argument>
         </arguments>

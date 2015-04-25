@@ -110,7 +110,7 @@ file_text_close(file);
           <argument>
             <kind>1</kind>
             <string>for(i = 0; i&lt;ds_list_size(lines); i+=1){
-draw_text(10,10+i*10,ds_list_find_value(lines,i));
+//draw_text(10,10+i*10,ds_list_find_value(lines,i));
 }
 
 </string>

@@ -49,9 +49,11 @@
     <sprite>sprites\sprGoal</sprite>
     <sprite>sprites\sprPerson</sprite>
     <sprite>sprites\sprPlayerLeft</sprite>
+    <sprite>sprites\sprPlayerUp</sprite>
     <sprite>sprites\sprPlayerRight</sprite>
-    <sprite>sprites\sprPlayerForward</sprite>
+    <sprite>sprites\sprPlayerDown</sprite>
     <sprite>sprites\sprPlayerIdle</sprite>
+    <sprite>sprites\sprPlayerDeath</sprite>
     <sprite>sprites\sprLives</sprite>
     <sprite>sprites\sprDiamond</sprite>
     <sprite>sprites\sprBomb</sprite>
@@ -86,12 +88,16 @@
     <sprite>sprites\sprGriefLeft</sprite>
     <sprite>sprites\sprGriefRight</sprite>
     <sprite>sprites\sprBox</sprite>
+    <sprite>sprites\sprite41</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bckStart</background>
     <background>background\bckMain</background>
     <background>background\bckDenial</background>
     <background>background\bckDenialDrop</background>
+    <background>background\bckDenialSplash</background>
+    <background>background\bckBlack</background>
+    <background>background\bckDenialBack</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -102,9 +108,12 @@
     <script>scripts\dropEmote.gml</script>
     <script>scripts\followPath.gml</script>
     <script>scripts\doorToggle.gml</script>
+    <script>scripts\playerDeath.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntScoreFont</font>
+    <font>fonts\fntInventory</font>
+    <font>fonts\fntMenu</font>
   </fonts>
   <objects name="objects">
     <object>objects\objDebris</object>
@@ -147,9 +156,13 @@
     <object>objects\objSlideLeft</object>
     <object>objects\objSlideRight</object>
     <object>objects\objHeavyBlock</object>
+    <object>objects\objTileDraw</object>
+    <object>objects\objWallCreateDown</object>
+    <object>objects\objPlayerDeath</object>
+    <object>objects\objTileBlack</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rmStart</room>
+    <room>rooms\rmMenu</room>
     <room>rooms\rmBargaining</room>
     <room>rooms\rmSandbox</room>
     <room>rooms\rmLevel1</room>

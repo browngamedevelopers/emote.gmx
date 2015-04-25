@@ -2,7 +2,7 @@
 <object>
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -36,7 +36,7 @@ show_lives = false;
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="1">
+    <event eventtype="5" enumb="32">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -54,6 +54,43 @@ show_lives = false;
           <argument>
             <kind>1</kind>
             <string>room_goto_next();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+draw_set_alpha(0.5);
+draw_set_color(c_black);
+draw_rectangle(view_wview[0]/2-205,view_hview[0]/2-150,view_wview[0]/2+65,view_hview[0]/2-130,false);
+draw_set_color(c_white);
+draw_set_alpha(1);
+draw_rectangle(view_wview[0]/2-205,view_hview[0]/2-150,view_wview[0]/2+65,view_hview[0]/2-130,true);
+
+draw_set_color(c_white);
+draw_set_font(fa_center);
+draw_set_font(fntMenu);
+draw_text(view_wview[0]/2-200,view_hview[0]/2-300,"5ive");
+draw_set_font(fa_left);
+draw_set_font(fntInventory);
+draw_text(view_wview[0]/2-200,view_hview[0]/2-147,"Grief changes shape, but it never ends.");
 </string>
           </argument>
         </arguments>

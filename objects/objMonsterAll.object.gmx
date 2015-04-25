@@ -256,8 +256,7 @@ if(!place_meeting(x+hspeed,y+vspeed,all)){
     y = ystart;
     score += 50;
 }else{
-    lives -=1;
-    room_restart();
+    playerDeath();
 }
 </string>
           </argument>

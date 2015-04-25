@@ -30,6 +30,10 @@ isHazard = true;
 
 idlePath = "";
 idlePathIndex = 0;
+rotateSpeed = irandom(20)+5;
+if(irandom(1)){
+    rotateSpeed *= -1;
+}
 </string>
           </argument>
         </arguments>
@@ -62,6 +66,7 @@ idlePathIndex = 0;
     followPath(idlePath,idlePathIndex);
     idlePathIndex = (idlePathIndex+1) mod (string_count(",",idlePath)+1);
 }
+image_angle += rotateSpeed;
 </string>
           </argument>
         </arguments>
@@ -84,8 +89,7 @@ idlePathIndex = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_restart();
-lives -= 1;
+            <string>playerDeath();
 </string>
           </argument>
         </arguments>

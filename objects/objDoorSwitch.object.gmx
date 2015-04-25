@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Execute unique scripts for a specific door in a level
 event_inherited();
+image_speed = 0;
 isTrigger = true;
 hasRan = false;
 //Set these in the creation code of the Level Editor
@@ -92,6 +93,7 @@ if(!hasRan){
         with(objDoor){
             if(doorName == other.myDoor){
                 if(script_exists(other.triggerScript)){
+                    other.image_index = 1;
                     script_execute(other.triggerScript);
                 }
             }

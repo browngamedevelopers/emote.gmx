@@ -48,11 +48,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(fntScoreFont);
+            <string>/*draw_set_font(fntScoreFont);
 draw_set_halign(fa_left);
 draw_set_color(c_red);
 draw_text(x+100-16,y+4-16,"Score: "  + string(score));
-draw_text(x+8-16,y+4-16,"Lives: "  + string(lives));
+draw_text(x+8-16,y+4-16,"Lives: "  + string(lives));*/
 </string>
           </argument>
         </arguments>
