@@ -33,7 +33,7 @@ pathToPlayer = path_add();
 nextPoint =1;
 pX = 0;
 pY = 0;
-image_speed = 1;
+image_speed = 0.5;
 
 stance = "idle";
 //idle,seeking

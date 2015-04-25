@@ -141,6 +141,7 @@
       <object>objects\objBonus</object>
       <object>objects\objTrigger</object>
       <object>objects\objBlock</object>
+      <object>objects\objHeavyBlock</object>
       <object>objects\objMonsterLR</object>
       <object>objects\objMonsterUD</object>
       <object>objects\objMonsterAll</object>
@@ -155,7 +156,6 @@
     <object>objects\objSlideDown</object>
     <object>objects\objSlideLeft</object>
     <object>objects\objSlideRight</object>
-    <object>objects\objHeavyBlock</object>
     <object>objects\objTileDraw</object>
     <object>objects\objWallCreateDown</object>
     <object>objects\objPlayerDeath</object>

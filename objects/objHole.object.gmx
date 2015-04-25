@@ -74,8 +74,7 @@ sound_play(sndHole);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>lives -= 1;
-room_restart();
+            <string>playerDeath();
 </string>
           </argument>
         </arguments>
