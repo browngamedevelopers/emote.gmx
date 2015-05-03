@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="1" name="datafiles">
+  <datafiles number="6" name="datafiles">
     <datafile>
       <name>parameters.ini</name>
       <exists>-1</exists>
@@ -21,6 +21,95 @@
       </ConfigOptions>
       <filename>parameters.ini</filename>
     </datafile>
+    <datafiles number="6" name="tilesets">
+      <datafile>
+        <name>denial.png</name>
+        <exists>-1</exists>
+        <size>7701</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>denial.png</filename>
+      </datafile>
+      <datafile>
+        <name>denialBack.png</name>
+        <exists>-1</exists>
+        <size>3602</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>denialBack.png</filename>
+      </datafile>
+      <datafile>
+        <name>objects.png</name>
+        <exists>-1</exists>
+        <size>3381</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>objects.png</filename>
+      </datafile>
+    </datafiles>
+    <datafiles number="6" name="maps">
+      <datafile>
+        <name>testLevel.lvl</name>
+        <exists>-1</exists>
+        <size>272</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>testLevel.lvl</filename>
+      </datafile>
+      <datafile>
+        <name>level.lvl</name>
+        <exists>-1</exists>
+        <size>1765</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>level.lvl</filename>
+      </datafile>
+    </datafiles>
   </datafiles>
   <NewExtensions/>
   <sounds name="sound">
@@ -107,8 +196,24 @@
     <script>scripts\performEmotion.gml</script>
     <script>scripts\dropEmote.gml</script>
     <script>scripts\followPath.gml</script>
-    <script>scripts\doorToggle.gml</script>
     <script>scripts\playerDeath.gml</script>
+    <script>scripts\doorToggle.gml</script>
+    <scripts name="loader">
+      <script>scripts\build.gml</script>
+      <script>scripts\check_property.gml</script>
+      <script>scripts\clear_list.gml</script>
+      <script>scripts\create_background.gml</script>
+      <script>scripts\define_objects.gml</script>
+      <script>scripts\find_tileset.gml</script>
+      <script>scripts\load_room.gml</script>
+      <script>scripts\make_layer.gml</script>
+      <script>scripts\make_object.gml</script>
+      <script>scripts\read_byte.gml</script>
+      <script>scripts\read_int.gml</script>
+      <script>scripts\read_string.gml</script>
+      <script>scripts\read_word.gml</script>
+      <script>scripts\set_properties.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntScoreFont</font>
@@ -160,9 +265,11 @@
     <object>objects\objWallCreateDown</object>
     <object>objects\objPlayerDeath</object>
     <object>objects\objTileBlack</object>
+    <object>objects\objLoader</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rmMenu</room>
+    <room>rooms\room23</room>
     <room>rooms\rmBargaining</room>
     <room>rooms\rmSandbox</room>
     <room>rooms\rmLevel1</room>
@@ -186,6 +293,35 @@
     <room>rooms\rmLevel19</room>
     <room>rooms\rmLevel20</room>
   </rooms>
+  <constants number="27">
+    <constant name="M_WIDTH">1</constant>
+    <constant name="M_HEIGHT">2</constant>
+    <constant name="M_TILEWIDTH">3</constant>
+    <constant name="M_TILEHEIGHT">4</constant>
+    <constant name="M_PROPERTY_NAME">5</constant>
+    <constant name="M_PROPERTY_VALUE">6</constant>
+    <constant name="M_TS_FIRST">7</constant>
+    <constant name="M_TS_NAME">8</constant>
+    <constant name="M_TS_TILEWIDTH">9</constant>
+    <constant name="M_TS_TILEHEIGHT">10</constant>
+    <constant name="M_TS_IMAGE">11</constant>
+    <constant name="M_L_NAME">14</constant>
+    <constant name="M_L_OPACITY">15</constant>
+    <constant name="M_L_DATA">16</constant>
+    <constant name="M_O_OBJECT">17</constant>
+    <constant name="M_O_X">18</constant>
+    <constant name="M_O_Y">19</constant>
+    <constant name="M_O_PROPERTY_NAME">20</constant>
+    <constant name="M_O_PROPERTY_VALUE">21</constant>
+    <constant name="TS_FIRST">0</constant>
+    <constant name="TS_NAME">1</constant>
+    <constant name="TS_TILEWIDTH">2</constant>
+    <constant name="TS_TILEHEIGHT">3</constant>
+    <constant name="TS_BG_INDEX">4</constant>
+    <constant name="T_MAP">0</constant>
+    <constant name="T_LAYER">1</constant>
+    <constant name="T_OBJECT">2</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

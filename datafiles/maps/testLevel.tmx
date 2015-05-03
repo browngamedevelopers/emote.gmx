@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" nextobjectid="28">
+ <tileset firstgid="1" name="denial" tilewidth="32" tileheight="32">
+  <image source="../tilesets/denial.png" width="192" height="320"/>
+ </tileset>
+ <tileset firstgid="61" name="denialBack" tilewidth="32" tileheight="32">
+  <image source="../tilesets/denialBack.png" width="192" height="192"/>
+ </tileset>
+ <tileset firstgid="97" name="objects" tilewidth="32" tileheight="32">
+  <image source="../tilesets/objects.png" width="160" height="32"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="10" height="10">
+  <data encoding="base64">
+   PQAAAD4AAAA/AAAAQAAAAEEAAABCAAAAPQAAAD4AAAA/AAAAQAAAAEMAAABEAAAARQAAAEYAAABHAAAASAAAAEMAAABEAAAARQAAAEYAAABJAAAASgAAAEsAAABMAAAATQAAAE4AAABJAAAASgAAAEsAAABMAAAATwAAAFAAAAABAAAAAgAAAAMAAAAEAAAABQAAAAYAAABRAAAAUgAAAFUAAABWAAAABwAAAAgAAAAJAAAACgAAAAsAAAAMAAAAVwAAAFgAAABbAAAAXAAAAA0AAAAOAAAADwAAABAAAAARAAAAEgAAAF0AAABeAAAAPQAAAD4AAAATAAAAFAAAABUAAAAWAAAAFwAAABgAAAA/AAAAQAAAAEMAAABEAAAAGQAAABoAAAAbAAAAHAAAAB0AAAAeAAAARQAAAEYAAABJAAAASgAAAB8AAAAgAAAAIQAAACIAAAAjAAAAJAAAAEsAAABMAAAATwAAAFAAAAAlAAAAJgAAACcAAAAoAAAAKQAAACoAAABRAAAAUgAAAA==
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object id="6" gid="97" x="160" y="160"/>
+  <object id="8" gid="98" x="160" y="224"/>
+  <object id="9" gid="98" x="128" y="224"/>
+  <object id="10" gid="98" x="96" y="224"/>
+  <object id="11" gid="98" x="64" y="224"/>
+  <object id="12" gid="98" x="192" y="224"/>
+  <object id="13" gid="98" x="224" y="224"/>
+  <object id="14" gid="98" x="256" y="192"/>
+  <object id="15" gid="98" x="256" y="160"/>
+  <object id="16" gid="98" x="256" y="128"/>
+  <object id="17" gid="98" x="224" y="96"/>
+  <object id="18" gid="98" x="192" y="96"/>
+  <object id="19" gid="98" x="160" y="96"/>
+  <object id="20" gid="98" x="128" y="96"/>
+  <object id="22" gid="98" x="96" y="96"/>
+  <object id="23" gid="98" x="64" y="96"/>
+  <object id="25" gid="98" x="32" y="128"/>
+  <object id="26" gid="98" x="32" y="160"/>
+  <object id="27" gid="98" x="32" y="192"/>
+ </objectgroup>
+</map>
