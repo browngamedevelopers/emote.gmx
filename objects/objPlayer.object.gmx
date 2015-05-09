@@ -436,8 +436,8 @@ if(isExcited){
             <kind>1</kind>
             <string>draw_self();
 //draw_text(x,y,instance_number(objPlayer));
-draw_text(x,y,string(x) + " " + string(y));
-draw_text(0,0,"origin");
+//draw_text(x,y,string(x) + " " + string(y));
+///draw_text(0,0,"origin");
 </string>
           </argument>
         </arguments>

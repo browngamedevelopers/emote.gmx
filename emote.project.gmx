@@ -406,7 +406,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rmMenu</room>
-    <room>rooms\room23</room>
+    <room>rooms\rmLoad</room>
     <room>rooms\rmBargaining</room>
     <room>rooms\rmSandbox</room>
     <room>rooms\rmLevel1</room>
