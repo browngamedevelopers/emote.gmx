@@ -58,6 +58,9 @@ var offsetY = 0;
 if(other.vspeed != 0){
     offsetY = other.vspeed*abs((global.gridSize/other.vspeed));
 }
+if(y+offsetY&gt;room_height || y+offsetY&lt;0 || x+offsetX&gt;room_width || x+offsetX&lt;0){
+    exit;
+}
 if(!place_meeting(x+offsetX,y+offsetY,objWall) &amp;&amp; !place_meeting(x+offsetX,y+offsetY,objCollidable)){
     sound_play(sndPush);
     x+=offsetX;

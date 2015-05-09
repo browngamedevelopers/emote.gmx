@@ -67,9 +67,12 @@ last_type=noone;
 
 fsize=file_bin_size(file)
 
+tiles_to_add = ds_list_create();
+
 while (fsize>0)
 {
     data=read_byte()
+    show_debug_message(data);
     build()
 }
 

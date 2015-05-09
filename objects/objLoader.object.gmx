@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>/// load room
 //show_info()
-load_room('testLevel.lvl')
+load_room(global.levelName)
 
 hint=true
 alpha=1
@@ -88,6 +88,15 @@ if (view_yview[0]&lt;0) { view_yview[0]=0 }
 ds_list_destroy(prop_names)
 ds_list_destroy(prop_values)
 
+var i;
+var args;
+for (i=0; i&lt;ds_list_size(tiles_to_add); i+=1){
+    args = ds_list_find_value(tiles_to_add,i);
+    tile_add(real(string_extract(args,",",0)), real(string_extract(args,",",1)), real(string_extract(args,",",2)), 
+    real(string_extract(args,",",3)), real(string_extract(args,",",4)), real(string_extract(args,",",5)), real(string_extract(args,",",6)), real(string_extract(args,",",7)));
+}
+background_color = c_black;
+//room_set_background(room, 0, 1, 0, bck_Space, 32, 32, 1, 1, 4, 0, 0.8);
 </string>
           </argument>
         </arguments>
@@ -110,7 +119,7 @@ ds_list_destroy(prop_values)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_white)
+            <string>/*draw_set_color(c_white)
 draw_text(view_xview[0]+10,view_yview[0]+10,string(view_xview[0])+'#'+string(view_yview[0]))
 if (hint)
 {
@@ -123,7 +132,7 @@ if (hint)
     draw_set_valign(fa_top)
 }
 
-
+*/
 </string>
           </argument>
         </arguments>

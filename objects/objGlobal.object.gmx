@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.angerCooldown = 150;
+            <string>global.levelName = "anger.lvl";
+
+global.angerCooldown = 150;
 global.angerToggleCooldown = 150;
 global.lazyToggleCooldown = 150;
 global.lazyCooldown = 150;

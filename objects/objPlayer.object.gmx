@@ -136,16 +136,16 @@ else //if not moving, allow keyboard presses
             global.playerSpeed *= 4;
         }
     }
-    if (keyboard_check(vk_up) &amp;&amp; !place_meeting(x,y-global.gridSize,objWall)){
+    if (keyboard_check(vk_up) &amp;&amp; !place_meeting(x,y-global.gridSize,objWall) &amp;&amp; y-global.gridSize &gt; 0){
         vspeed = -global.playerSpeed;
         sprite_index = sprPlayerUp;
-    } else if (keyboard_check(vk_down) &amp;&amp; !place_meeting(x,y+global.gridSize,objWall)){
+    } else if (keyboard_check(vk_down) &amp;&amp; !place_meeting(x,y+global.gridSize,objWall) &amp;&amp; y+global.gridSize &lt; room_height){
         vspeed =  global.playerSpeed;
         sprite_index = sprPlayerDown;
-    } else if (keyboard_check(vk_left) &amp;&amp; !place_meeting(x-global.gridSize,y,objWall)){
+    } else if (keyboard_check(vk_left) &amp;&amp; !place_meeting(x-global.gridSize,y,objWall) &amp;&amp; x-global.gridSize &gt; 0 ){
         hspeed = -global.playerSpeed;
         sprite_index = sprPlayerLeft;
-    } else if (keyboard_check(vk_right) &amp;&amp; !place_meeting(x+global.gridSize,y,objWall)){
+    } else if (keyboard_check(vk_right) &amp;&amp; !place_meeting(x+global.gridSize,y,objWall) &amp;&amp; x+global.gridSize &lt; room_width){
         hspeed =  global.playerSpeed;
         sprite_index = sprPlayerRight;
     }else{

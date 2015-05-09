@@ -3,7 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="6" name="datafiles">
+  <datafiles number="14" name="datafiles">
     <datafile>
       <name>parameters.ini</name>
       <exists>-1</exists>
@@ -21,7 +21,7 @@
       </ConfigOptions>
       <filename>parameters.ini</filename>
     </datafile>
-    <datafiles number="6" name="tilesets">
+    <datafiles number="14" name="tilesets">
       <datafile>
         <name>denial.png</name>
         <exists>-1</exists>
@@ -73,8 +73,127 @@
         </ConfigOptions>
         <filename>objects.png</filename>
       </datafile>
+      <datafile>
+        <name>AngerBG1.png</name>
+        <exists>-1</exists>
+        <size>3504</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>AngerBG1.png</filename>
+      </datafile>
+      <datafile>
+        <name>AngerBG2.png</name>
+        <exists>-1</exists>
+        <size>4357</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>AngerBG2.png</filename>
+      </datafile>
+      <datafile>
+        <name>AngerBG3.png</name>
+        <exists>-1</exists>
+        <size>5750</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>AngerBG3.png</filename>
+      </datafile>
+      <datafile>
+        <name>AngerFL+DO1.png</name>
+        <exists>-1</exists>
+        <size>5240</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>AngerFL+DO1.png</filename>
+      </datafile>
+      <datafile>
+        <name>AngerFL+DO2.png</name>
+        <exists>-1</exists>
+        <size>5720</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>AngerFL+DO2.png</filename>
+      </datafile>
+      <datafile>
+        <name>AngerFL1.png</name>
+        <exists>-1</exists>
+        <size>4598</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>AngerFL1.png</filename>
+      </datafile>
+      <datafile>
+        <name>AngerFL2.png</name>
+        <exists>-1</exists>
+        <size>4444</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>AngerFL2.png</filename>
+      </datafile>
     </datafiles>
-    <datafiles number="6" name="maps">
+    <datafiles number="14" name="maps">
       <datafile>
         <name>testLevel.lvl</name>
         <exists>-1</exists>
@@ -108,6 +227,23 @@
           </Config>
         </ConfigOptions>
         <filename>level.lvl</filename>
+      </datafile>
+      <datafile>
+        <name>anger.lvl</name>
+        <exists>-1</exists>
+        <size>4612</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>anger.lvl</filename>
       </datafile>
     </datafiles>
   </datafiles>
@@ -187,6 +323,7 @@
     <background>background\bckDenialSplash</background>
     <background>background\bckBlack</background>
     <background>background\bckDenialBack</background>
+    <background>background\background7</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

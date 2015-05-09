@@ -55,6 +55,10 @@ for (i=0; i<r_mapwidth*r_mapheight; i+=1)
         if (flipx<0) { shiftx=t_width } else { shiftx=0 }
         if (flipy<0) { shifty=t_height } else { shifty=0 }
         
-        room_tile_add_ext(newroom, t_bg, tx, ty, t_width, t_height, cx+shiftx, cy+shifty, t_depth, flipx, flipy, r_layer_opacity);
+        ds_list_add(tiles_to_add,string(t_bg) +","+ string(tx) +","+ string(ty) +","+ string(t_width) +","+ string(t_height) +","+ string(cx+shiftx) +","+ string(cy+shifty) +","+ string(t_depth));
+        //tile_add(t_bg, tx, ty, t_width, t_height, cx+shiftx, cy+shifty, t_depth);
+        
+        //room_tile_add_ext(newroom, t_bg, tx, ty, t_width, t_height, cx+shiftx, cy+shifty, t_depth, flipx, flipy, r_layer_opacity);
     }
 }
+
